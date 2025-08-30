@@ -15,6 +15,7 @@
     max-width: 1200px;
     width: 100%;
     gap: 60px;
+    margin-top: 80px;
   }
   
   /* Image Section */
@@ -31,8 +32,8 @@
   
   .green-background1 {
     position: absolute;
-    width: 320px;
-    height: 420px;
+    width: 360px;
+    height: 375px;
     background: #fff;
     z-index: 1;
     top: 148px;
@@ -48,7 +49,7 @@
   
   .alumni-image img {
     width: 400px;
-    height: 500px;
+    height: 450px;
     object-fit: cover;
     border-radius: 0;
   }
@@ -268,5 +269,96 @@
     
     .year {
       font-size: 0.75rem;
+    }
+  }
+
+  .alumni-container {
+    padding-top: 80px; /* Add space at top for the heading */
+    position: relative;
+  }
+  
+  .alumni-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
+    padding: 0 60px;
+    margin-bottom: 0;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+  
+  .alumni-header.slide-in-up {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .alumni-title {
+    font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 700;
+  color: white;
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+    margin-left: 120px;
+    margin-bottom: 40px;
+    white-space: nowrap;
+  }
+  
+  /* .alumni-title::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(90deg, #a855f7, #8b5cf6, #7c3aed);
+    border-radius: 2px;
+  } */
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .alumni-container {
+      padding-top: 60px;
+    }
+    
+    .alumni-header {
+      padding: 0 40px;
+    }
+    
+    .alumni-title::after {
+      width: 80px;
+      height: 3px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .alumni-container {
+      padding-top: 50px;
+      
+    }
+    
+    .alumni-header {
+      padding: 0 20px;
+    }
+    
+    .alumni-title {
+      letter-spacing: 1px;
+      /* margin-top:20px; */
+      font-size: 2.5rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      text-align: center;
+      margin-left: 0;
+    }
+    
+    .alumni-title::after {
+      width: 60px;
+      height: 2px;
     }
   }

@@ -23,3 +23,18 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+/* Mobile padding for the entire website */
+@media (max-width: 768px) {
+  .App {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

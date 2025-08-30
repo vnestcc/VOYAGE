@@ -31,6 +31,10 @@ const Chiefguest = () => {
 
   return (
     <div className="alumni-container" ref={alumniRef}>
+      <div className={`alumni-header ${isVisible ? 'slide-in-up' : ''}`}>
+        <h1 className="alumni-title">Chief Guest</h1>
+      </div>
+
       <div className="alumni-content">
         <div className={`alumni-image-section ${isVisible ? 'slide-in-right' : ''}`}>
           <div className="green-background1"></div>

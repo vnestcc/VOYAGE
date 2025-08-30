@@ -83,7 +83,7 @@
 .event-info-column {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  /* gap: 10px; */
 }
 
 .event-title {
@@ -172,27 +172,33 @@
   
   .agenda-row {
     grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 30px 0;
-    text-align: center;
+    gap: 0;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 40px;
   }
   
   .date-column {
-    flex-direction: row;
-    justify-content: center;
-    gap: 15px;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
     margin-bottom: 20px;
+    align-items: flex-start;
   }
   
   .day-number {
-    font-size: 3.5rem;
-    margin-bottom: 0;
+    font-size: 4.5rem;
+    margin-bottom: 5px;
+    line-height: 1;
+    font-weight: 700;
   }
   
   .day-name {
-    font-size: 1.2rem;
-    align-self: flex-end;
-    margin-bottom: 5px;
+    font-size: 1.4rem;
+    align-self: flex-start;
+    margin-bottom: 0;
+    opacity: 1;
+    font-weight: 500;
   }
   
   .event-info-column {
@@ -200,23 +206,30 @@
   }
   
   .event-title {
-    font-size: 1.4rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+    margin-bottom: 0;
   }
   
   .event-time {
-    font-size: 1rem;
+    font-size: 1.3rem;
+    opacity: 1;
+    font-weight: 500;
   }
   
   .image-column {
-    margin-bottom: 20px;
-  }
-  
-  .event-image-placeholder {
-    height: 160px;
+    display: none;
   }
   
   .description-column {
     padding: 0;
+    margin-top: 0;
+  }
+  
+  .event-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 1;
   }
 }
 
@@ -238,31 +251,33 @@
   }
   
   .agenda-row {
-    padding: 25px 0;
+    padding: 0;
+    margin-bottom: 30px;
   }
   
   .day-number {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   
   .day-name {
-    font-size: 1rem;
-  }
-  
-  .event-title {
     font-size: 1.2rem;
   }
   
+  .event-title {
+    font-size: 1.8rem;
+    margin-bottom: 0;
+  }
+  
   .event-time {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
   
   .event-description {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
   
-  .event-image-placeholder {
-    height: 140px;
+  .image-column {
+    display: none;
   }
 }
 

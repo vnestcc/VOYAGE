@@ -22,7 +22,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
+  padding: 20px 80px;
   position: fixed;
   top: 0;
   left: 0;
@@ -41,8 +41,8 @@
 
 .logo-icon,
 .vit-logo {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   object-fit: contain;
   transition: all 0.3s ease;
 }
@@ -115,8 +115,8 @@
 }
 
 .vnest-logo {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   object-fit: contain;
   transition: all 0.3s ease;
   border-radius: 8px;
@@ -307,6 +307,7 @@
   transition: all 0.3s ease;
   /* margin-bottom: 20px; */
   filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+  white-space: nowrap;
 }
 
 .voyage-logo:hover {
@@ -322,10 +323,11 @@
   text-transform: uppercase;
   margin-bottom: 0px;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
 }
 
 .date {
-  font-size: clamp(1.2rem, 4vw, 3.2rem);
+  font-size: clamp(1.2rem, 4vw, 3rem);
   color: white;
   font-weight: 600;
   letter-spacing: -0.01em;
@@ -362,6 +364,7 @@
   overflow: hidden;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   border: 2px solid rgba(255, 255, 255, 0.2);
+  white-space: nowrap;
 }
 
 .btn::before {
@@ -437,7 +440,7 @@
 /* Responsive Design */
 @media (max-width: 1024px) {
   .navbar {
-    padding: 20px 40px;
+    padding: 20px 50px;
   }
   
   .nav-links {
@@ -452,7 +455,7 @@
 
 @media (max-width: 768px) {
   .navbar {
-    padding: 20px 25px;
+    padding: 20px 30px;
     justify-content: space-between;
   }
   
@@ -485,6 +488,8 @@
   .btn {
     width: 250px;
     text-align: center;
+    font-size: 14px;
+    padding: 20px 24px;
   }
   
   .date {
@@ -493,12 +498,17 @@
 
   .voyage-logo {
     max-height: 200px;
+    font-size: 1.8rem;
+  }
+  
+  .subtitle {
+    font-size: 1.4rem;
   }
 }
 
 @media (max-width: 480px) {
   .navbar {
-    padding: 18px 20px;
+    padding: 18px 25px;
   }
   
   .logo-text {
@@ -506,8 +516,8 @@
   }
   
   .logo-icon {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     font-size: 14px;
   }
   
@@ -528,23 +538,32 @@
   
   .subtitle {
     margin-bottom: 5px;
+    font-size: 1.2rem;
   }
   
   .date {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    font-size: 1.875rem;
   }
 
   .voyage-logo {
     max-height: 150px;
+    font-size: 1.5rem;
+  }
+  
+  .btn {
+    width: 240px;
+    font-size: 16px;
+    padding: 18px 20px;
   }
 
   .vit-logo {
-    width: 40px;
-    height: 40px;
+    width: 90px;
+    height: 60px;
   }
   
   .vnest-logo {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
 }

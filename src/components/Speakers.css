@@ -156,12 +156,13 @@
     }
     
     .speakers-grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
+      grid-template-columns: 1fr;
+      gap: 40px;
     }
     
     .speaker-card {
-      height: 400px;
+      height: auto;
+      min-height: 300px;
     }
     
     .background-shape {
@@ -169,8 +170,8 @@
     }
     
     .speaker-image {
-      width: 140px;
-      height: 180px;
+      width: 280px;
+      height: 350px;
     }
     
     .speaker-content {
@@ -178,12 +179,18 @@
       margin-left: 0;
     }
     
+    .speaker-details {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+    
     .speaker-name {
-      font-size: 1.2rem;
+      font-size: 1.8rem;
+      margin-bottom: 15px;
     }
     
     .speaker-title {
-      font-size: 0.8rem;
+      font-size: 1.1rem;
     }
   }
   
@@ -200,12 +207,13 @@
     }
     
     .speakers-grid {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+      grid-template-columns: 1fr;
+      gap: 30px;
     }
     
     .speaker-card {
-      height: 320px;
+      height: auto;
+      min-height: 250px;
     }
     
     .background-shape {
@@ -213,9 +221,9 @@
     }
     
     .speaker-image {
-      width: 120px;
-      height: 150px;
-      margin-bottom: 15px;
+      width: 240px;
+      height: 300px;
+      margin-bottom: 20px;
     }
     
     .speaker-content {
@@ -224,17 +232,18 @@
     }
     
     .speaker-details {
-      max-width: 120px;
+      max-width: 100%;
+      margin-top: 15px;
     }
     
     .speaker-name {
-      font-size: 0.9rem;
+      font-size: 1.5rem;
       letter-spacing: 1px;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
     
     .speaker-title {
-      font-size: 0.65rem;
+      font-size: 1rem;
     }
   }
 

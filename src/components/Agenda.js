@@ -156,7 +156,7 @@ const Agenda = () => {
       <div className="agenda-container">
         <div className="agenda-header">
           <h2 className="agenda-title">Agenda</h2>
-          <p className="agenda-subtitle">August 2024</p>
+          <p className="agenda-subtitle">August 2025</p>
         </div>
 
         <div className="agenda-content">
