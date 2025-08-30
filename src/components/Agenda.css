@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+.agenda-section {
+  min-height: 100vh;
+  background: transparent;
+  padding: 80px 0;
+  font-family: 'Space Grotesk', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.agenda-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.agenda-header {
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.agenda-title {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 700;
+  color: white;
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.agenda-subtitle {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.agenda-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.agenda-row {
+  display: grid;
+  grid-template-columns: 150px 300px 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  min-height: 180px;
+  padding: 20px 0;
+}
+
+/* Column 1: Date and Day */
+.date-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.day-number {
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.day-name {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  color: white;
+  opacity: 0.9;
+}
+
+/* Column 2: Event Info */
+.event-info-column {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.event-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: white;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.event-time {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Columns 3 & 4: Image and Description */
+.image-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description-column {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.event-image-placeholder {
+  background: #fff;
+  height: 180px;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-weight: 500;
+}
+
+.event-image-placeholder::after {
+  content: 'Event Image';
+}
+
+.event-description {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .agenda-container {
+    padding: 0 30px;
+  }
+  
+  .agenda-row {
+    grid-template-columns: 120px 250px 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .day-number {
+    font-size: 4rem;
+  }
+  
+  .event-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .agenda-section {
+    padding: 60px 0;
+  }
+  
+  .agenda-container {
+    padding: 0 20px;
+  }
+  
+  .agenda-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .agenda-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 30px 0;
+    text-align: center;
+  }
+  
+  .date-column {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .day-number {
+    font-size: 3.5rem;
+    margin-bottom: 0;
+  }
+  
+  .day-name {
+    font-size: 1.2rem;
+    align-self: flex-end;
+    margin-bottom: 5px;
+  }
+  
+  .event-info-column {
+    margin-bottom: 20px;
+  }
+  
+  .event-title {
+    font-size: 1.4rem;
+  }
+  
+  .event-time {
+    font-size: 1rem;
+  }
+  
+  .image-column {
+    margin-bottom: 20px;
+  }
+  
+  .event-image-placeholder {
+    height: 160px;
+  }
+  
+  .description-column {
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .agenda-section {
+    padding: 40px 0;
+  }
+  
+  .agenda-container {
+    padding: 0 15px;
+  }
+  
+  .agenda-title {
+    font-size: 2.5rem;
+  }
+  
+  .agenda-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .agenda-row {
+    padding: 25px 0;
+  }
+  
+  .day-number {
+    font-size: 3rem;
+  }
+  
+  .day-name {
+    font-size: 1rem;
+  }
+  
+  .event-title {
+    font-size: 1.2rem;
+  }
+  
+  .event-time {
+    font-size: 0.9rem;
+  }
+  
+  .event-description {
+    font-size: 0.9rem;
+  }
+  
+  .event-image-placeholder {
+    height: 140px;
+  }
+}
+
+
+.agenda-section {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.agenda-section.slide-in {
+  opacity: 1;
+  transform: translateY(0);
+}
