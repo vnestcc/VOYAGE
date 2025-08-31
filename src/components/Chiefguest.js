@@ -18,13 +18,14 @@ const Chiefguest = () => {
       }
     );
 
-    if (alumniRef.current) {
-      observer.observe(alumniRef.current);
+    const currentRef = alumniRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (alumniRef.current) {
-        observer.unobserve(alumniRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);

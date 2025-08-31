@@ -88,13 +88,14 @@ const Sponsors = () => {
       }
     );
 
-    if (sponsorsRef.current) {
-      observer.observe(sponsorsRef.current);
+    const currentRef = sponsorsRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (sponsorsRef.current) {
-        observer.unobserve(sponsorsRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);

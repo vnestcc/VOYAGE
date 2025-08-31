@@ -190,14 +190,14 @@ const Hero = () => {
         </div>
         
         <ul className="nav-links">
-          <li><a href="#" onClick={(e) => handleNavClick(e, '.hero-container')}>Home</a></li>
-          <li><a href="#" onClick={(e) => handleNavClick(e, '.whoarewe-container')}>About</a></li>
-          <li><a href="#" onClick={(e) => handleNavClick(e, '.agenda-section')}>Agenda</a></li>
-          <li><a href="#" onClick={(e) => handleNavClick(e, '.speakers-container')}>Speakers</a></li>
-          <li><a href="#" onClick={(e) => handleNavClick(e, '.sponsors-container')}>Sponsors</a></li>
+          <li><button onClick={(e) => handleNavClick(e, '.hero-container')} className="nav-link">Home</button></li>
+          <li><button onClick={(e) => handleNavClick(e, '.whoarewe-container')} className="nav-link">About</button></li>
+          <li><button onClick={(e) => handleNavClick(e, '.agenda-section')} className="nav-link">Agenda</button></li>
+          <li><button onClick={(e) => handleNavClick(e, '.speakers-container')} className="nav-link">Speakers</button></li>
+          <li><button onClick={(e) => handleNavClick(e, '.sponsors-container')} className="nav-link">Sponsors</button></li>
           <li><a href="https://hackathon.voyage-esummit.com" target="_blank" rel="noopener noreferrer">Hackathon</a></li>
           <li><a href="https://register.voyage-esummit.com" target="_blank" rel="noopener noreferrer">Registrations</a></li>
-          <li><a href="#" onClick={(e) => { e.preventDefault(); window.showFooter && window.showFooter(); }}>Contact Us</a></li>
+          <li><button onClick={(e) => { e.preventDefault(); window.showFooter && window.showFooter(); }} className="nav-link">Contact Us</button></li>
         </ul>
         
         <div className="desktop-vnest">
@@ -222,14 +222,14 @@ const Hero = () => {
           <span>&times;</span>
         </button>
         <ul className="mobile-menu-list">
-          <li><a href="#" onClick={(e) => { handleNavClick(e, '.hero-container'); closeMobileMenu(); }}>Home</a></li>
-          <li><a href="#" onClick={(e) => { handleNavClick(e, '.whoarewe-container'); closeMobileMenu(); }}>About</a></li>
-          <li><a href="#" onClick={(e) => { handleNavClick(e, '.agenda-section'); closeMobileMenu(); }}>Agenda</a></li>
-          <li><a href="#" onClick={(e) => { handleNavClick(e, '.speakers-container'); closeMobileMenu(); }}>Speakers</a></li>
-          <li><a href="#" onClick={(e) => { handleNavClick(e, '.sponsors-container'); closeMobileMenu(); }}>Sponsors</a></li>
+          <li><button onClick={(e) => { handleNavClick(e, '.hero-container'); closeMobileMenu(); }} className="mobile-nav-link">Home</button></li>
+          <li><button onClick={(e) => { handleNavClick(e, '.whoarewe-container'); closeMobileMenu(); }} className="mobile-nav-link">About</button></li>
+          <li><button onClick={(e) => { handleNavClick(e, '.agenda-section'); closeMobileMenu(); }} className="mobile-nav-link">Agenda</button></li>
+          <li><button onClick={(e) => { handleNavClick(e, '.speakers-container'); closeMobileMenu(); }} className="mobile-nav-link">Speakers</button></li>
+          <li><button onClick={(e) => { handleNavClick(e, '.sponsors-container'); closeMobileMenu(); }} className="mobile-nav-link">Sponsors</button></li>
           <li><a href="https://hackathon.voyage-esummit.com" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>Hackathon</a></li>
           <li><a href="https://register.voyage-esummit.com" target="_blank" rel="noopener noreferrer" onClick={closeMobileMenu}>Registrations</a></li>
-          <li><a href="#" onClick={(e) => { e.preventDefault(); window.showFooter && window.showFooter(); closeMobileMenu(); }}>Contact Us</a></li>
+          <li><button onClick={(e) => { e.preventDefault(); window.showFooter && window.showFooter(); closeMobileMenu(); }} className="mobile-nav-link">Contact Us</button></li>
         </ul>
       </div>
       
@@ -251,7 +251,7 @@ const Hero = () => {
         
         <div className={`cta-buttons ${isLoaded ? 'loaded' : ''}`}>
           <a href="https://hackathon.voyage-esummit.com" target="_blank" rel="noopener noreferrer" className="btn btn-primary">View the Hackathon</a>
-          <a href="#" onClick={(e) => handleNavClick(e, '.agenda-section')} className="btn">View the Conclave</a>
+          <button onClick={(e) => handleNavClick(e, '.agenda-section')} className="btn">View the Conclave</button>
         </div>
       </main>
     </div>

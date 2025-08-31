@@ -113,13 +113,14 @@ const Agenda = () => {
       }
     );
 
-    if (agendaRef.current) {
-      observer.observe(agendaRef.current);
+    const currentRef = agendaRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (agendaRef.current) {
-        observer.unobserve(agendaRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
