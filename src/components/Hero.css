@@ -75,7 +75,8 @@
   position: relative;
 }
 
-.nav-links a {
+.nav-links a,
+.nav-links button {
   color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   font-weight: 500;
@@ -87,9 +88,14 @@
   white-space: nowrap;
   position: relative;
   overflow: hidden;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
-.nav-links a::after {
+.nav-links a::after,
+.nav-links button::after {
   content: '';
   position: absolute;
   width: 0;
@@ -101,12 +107,14 @@
   border-radius: 1px;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links button:hover {
   color: #a855f7;
   text-shadow: 0 0 10px rgba(168, 85, 247, 0.4);
 }
 
-.nav-links a:hover::after {
+.nav-links a:hover::after,
+.nav-links button:hover::after {
   width: 100%;
 }
 
@@ -222,7 +230,8 @@
   padding: 0 40px;
 }
 
-.mobile-menu-list a {
+.mobile-menu-list a,
+.mobile-menu-list button {
   color: white;
   text-decoration: none;
   font-weight: 500;
@@ -232,9 +241,17 @@
   transition: all 0.3s ease;
   padding: 15px 0;
   border-bottom: 2px solid transparent;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  font-family: inherit;
+  width: 100%;
+  text-align: left;
 }
 
-.mobile-menu-list a:hover {
+.mobile-menu-list a:hover,
+.mobile-menu-list button:hover {
   color: #a855f7;
   border-bottom-color: #a855f7;
 }
@@ -448,7 +465,8 @@
     padding: 15px 30px;
   }
   
-  .nav-links a {
+  .nav-links a,
+  .nav-links button {
     font-size: 15px;
   }
 }
@@ -532,7 +550,8 @@
     gap: 25px;
   }
   
-  .mobile-menu-list a {
+  .mobile-menu-list a,
+  .mobile-menu-list button {
     font-size: 18px;
   }
   

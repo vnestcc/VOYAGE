@@ -80,13 +80,14 @@ const Speakers = () => {
       }
     );
 
-    if (speakersRef.current) {
-      observer.observe(speakersRef.current);
+    const currentRef = speakersRef.current;
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (speakersRef.current) {
-        observer.unobserve(speakersRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);

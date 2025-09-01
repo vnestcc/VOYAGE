@@ -50,11 +50,11 @@ const FooterContent = () => {
           <div className="footer-right">
             <h3>Quick Links</h3>
             <div className="footer-links">
-              <a href="#" onClick={() => scrollToSection('.hero-container')} className="footer-link">Home</a>
-              <a href="#" onClick={() => scrollToSection('.whoarewe-container')} className="footer-link">About</a>
-              <a href="#" onClick={() => scrollToSection('.agenda-container')} className="footer-link">Agenda</a>
-              <a href="#" onClick={() => scrollToSection('.speakers-container')} className="footer-link">Speakers</a>
-              <a href="#" onClick={() => scrollToSection('.sponsors-container')} className="footer-link">Sponsors</a>
+              <button onClick={() => scrollToSection('.hero-container')} className="footer-link">Home</button>
+              <button onClick={() => scrollToSection('.whoarewe-container')} className="footer-link">About</button>
+              <button onClick={() => scrollToSection('.agenda-container')} className="footer-link">Agenda</button>
+              <button onClick={() => scrollToSection('.speakers-container')} className="footer-link">Speakers</button>
+              <button onClick={() => scrollToSection('.sponsors-container')} className="footer-link">Sponsors</button>
               <a href="https://hackathon.voyage-esummit.com" target="_blank" rel="noopener noreferrer" className="footer-link">Hackathon</a>
               <a href="https://register.voyage-esummit.com" target="_blank" rel="noopener noreferrer" className="footer-link">Registrations</a>
             </div>
