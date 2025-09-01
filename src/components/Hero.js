@@ -182,7 +182,7 @@ const Hero = () => {
       <nav className="navbar">
         <div className="logo">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6mIH9mfspUc7s6rm9C6l5_rJ5JuKDqR7DaA&s"
+            src="./vit-logo.svg"
             alt="VIT Chennai Logo"
             className="vit-logo"
             loading="lazy"
@@ -236,7 +236,7 @@ const Hero = () => {
       <main className={`hero-content ${isLoaded ? 'loaded' : ''}`}>
         <div className={`voyage-logo-container ${isLoaded ? 'loaded' : ''}`}>
           <img 
-            src="/WhatsApp_Image_2025-08-29_at_22.14.29_92f17f5c-removebg-preview.png" 
+            src="/WhatsApp_Image_2025-08-29_at_22.14.29_92f17f5c-removebg-preview.webp" 
             alt="VOYAGE Logo" 
             className="voyage-logo"
             loading="lazy"

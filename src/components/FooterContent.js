@@ -35,16 +35,7 @@ const FooterContent = () => {
           </div>
           
           {/* Center Section - Logo */}
-          <div className="footer-center">
-            <div className="footer-logo">
-              {/* Replace with your actual logo */}
-              <img 
-                src="/WhatsApp_Image_2025-08-29_at_22.14.29_92f17f5c-removebg-preview.png" 
-                alt="VOYAGE Logo" 
-                className="voyage-footer-logo"
-              />
-            </div>
-          </div>
+        
           
           {/* Right Section */}
           <div className="footer-right">
@@ -57,6 +48,17 @@ const FooterContent = () => {
               <button onClick={() => scrollToSection('.sponsors-container')} className="footer-link">Sponsors</button>
               <a href="https://hackathon.voyage-esummit.com" target="_blank" rel="noopener noreferrer" className="footer-link">Hackathon</a>
               <a href="https://register.voyage-esummit.com" target="_blank" rel="noopener noreferrer" className="footer-link">Registrations</a>
+            </div>
+          </div>
+
+          <div className="footer-center">
+            <div className="footer-logo">
+              {/* Replace with your actual logo */}
+              <img 
+                src="/WhatsApp_Image_2025-08-29_at_22.14.29_92f17f5c-removebg-preview.webp" 
+                alt="VOYAGE Logo" 
+                className="voyage-footer-logo"
+              />
             </div>
           </div>
         </div>
